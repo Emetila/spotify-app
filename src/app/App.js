@@ -1,13 +1,18 @@
 import logo from '../logo.svg';
 import './App.css';
+import {LandingPageHeader} from './components/LandingPageHeader'
 
 export function App() {
   return (
     <div>
-      <h1>Hello World</h1>
-        <p> People of Africa</p>
+      <LandingPageHeader />
     </div>
   );
 }
 
-export default App;
+// returns JSX, and the naming is PascalCase
+// This is a functional component
+// Component name must be written in PascalCase
+// NavigationBar
+
+// not navigationbar, navigation-bar, navigation_bar
