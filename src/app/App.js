@@ -1,11 +1,13 @@
-import logo from '../logo.svg';
+import logo from '../Frame.svg';
 import './App.css';
 import {LandingPageHeader} from './components/LandingPageHeader'
+import {HeroSection} from './components/HeroSection'
 
 export function App() {
   return (
     <div>
       <LandingPageHeader />
+      <HeroSection />
     </div>
   );
 }
@@ -16,3 +18,5 @@ export function App() {
 // NavigationBar
 
 // not navigationbar, navigation-bar, navigation_bar
+
+
