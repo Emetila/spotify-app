@@ -1,14 +1,31 @@
 import './LandingPageHeader.css'
-import {Logo} from './Logo'
+import React from 'react'
+import {Logo} from '../Logo/Logo'
+import {ReactComponent as Menuicon} from '../../assets/icons/menu.svg'
 import { HeaderNavigation } from './HeaderNavigation'
 
+function useState(initialValue) {
+    let val = initialValue
+    function change(newValue) {
+        val = newValue
+    }
+
+    return [val, change]
+}
 export const LandingPageHeader = () => {
+    const [showMenu, setMenu] = React.useState(false);
+
+    const toggleMenu = () => {
+        setMenu(showMenu === false)
+    }
+    
     return (<header className='header'>
         <div className="logo">
             <Logo useWhite={true} />
         </div>
-        <div className="menu">
-            <HeaderNavigation />
+        <Menuicon className='menu-icon' onClick={toggleMenu} fill='white' />
+        <div className='menu'>
+            <HeaderNavigation className={showMenu ? 'mobile' : ''} />
         </div>
     </header>)
 }

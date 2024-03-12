@@ -1,3 +1,7 @@
+.header {
+  background: black;
+}
+
 .btn, .btn-outline {
   background-color: black;
   color: white;
@@ -16,15 +20,12 @@
   border: 1px solid white;
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
   .btn, .btn-outline {
-      padding: 10px 20px;
+      padding: 14px 20px;
       text-wrap: nowrap;
+      font-weight: none;
+      font-size: 11px;
   }
 }
 
-@media (max-width:400px) {
-  .menu ul {
-      display: none;
-  }
-}

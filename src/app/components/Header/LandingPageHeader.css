@@ -1,5 +1,5 @@
 .header {
-    height: 60px;
+    min-height: 80px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -22,12 +22,43 @@
     text-wrap: nowrap;
 }
 
-@media (max-width:500px) {
-    .menu ul {
-        display: none;
-    }
-}
-
 .menu ul li.active a {
     color: #D9DADC;
 }
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width:500px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        padding: var(--app-block-padding);
+        background-color: black;
+    }
+    
+    .menu ul {
+        display: none;
+    }
+
+    .menu ul.mobile {
+        display: block;
+    }
+    
+    .menu ul li {
+    padding: 10px 0;
+}
+
+.menu li.hidden-mobile {
+    display: none;
+}
+}
+

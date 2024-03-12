@@ -40,5 +40,10 @@
 
     .hero h1.title {
         font-size: 2rem;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 0.5rem;
     }
 }
