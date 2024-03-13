@@ -2,7 +2,7 @@
   background: black;
 }
 
-.btn, .btn-outline {
+.btn, .btn-outline, .btn-secondary {
   background-color: black;
   color: white;
   border: none;
@@ -13,6 +13,11 @@
   font-weight: 600;
   font-family: Helvetica;
   text-transform: uppercase;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  border: 1px solid #ccc;
 }
 
 .btn-outline {

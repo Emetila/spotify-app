@@ -6,7 +6,9 @@ export function App() {
   return (
     <div>
       <LandingPageHeader />
-      <Hero />
+      <Hero 
+        title="Get Premium free for 7 days"
+        amount={'$232'}/>
     </div>
   );
 }
