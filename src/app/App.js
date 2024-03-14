@@ -1,6 +1,7 @@
 import './App.css';
 import { LandingPageHeader } from './components/Header/LandingPageHeader'
 import { Hero } from './components/Hero/index.jsx';
+import { Features } from './components/Features/index.jsx';
 
 export function App() {
   return (
@@ -9,6 +10,7 @@ export function App() {
       <Hero 
         title="Get Premium free for 7 days"
         amount={'$232'}/>
+      <Features />
     </div>
   );
 }

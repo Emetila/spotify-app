@@ -39,9 +39,9 @@
         flex-direction: column;
         position: absolute;
         left: 0;
-        right: 0;
+        right: 0px;
+        padding-left: 20px;
         top: 80px;
-        padding: var(--app-block-padding);
         background-color: black;
     }
     
