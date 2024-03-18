@@ -6,7 +6,10 @@ export const CustomButton = (props) => {
     }
     const className = classNames [props.type] || classNames.primary
     return (
-        props.onClick ? <button className={className}>See Other Plans</button> 
+        props.onClick ?
+        <button onClick= {props.onClick} className={className}>
+            {props.children}
+        </button> 
             : 
         <a href="#"className={className}>{props.title}</a>   
     )

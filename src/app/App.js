@@ -1,19 +1,18 @@
 import './App.css';
-import { LandingPageHeader } from './components/Header/LandingPageHeader'
-import { Hero } from './components/Hero/index.jsx';
-import { Features } from './components/Features/index.jsx';
 import { Login } from './components/Login/index.jsx';
+import { Landing } from './pages/Landing'
 
 
 export function App() {
+  const isLogin = new URLSearchParams(window.location.search)
+  if (isLogin.get('status') === 'home') {
+    return (<Landing />)
+  }
+  
   return (
     <div>
       <Login />
-      <LandingPageHeader />
-      <Hero 
-        title="Get Premium free for 7 days"
-        amount={'$232'}/>
-      <Features />
+      
       
     </div>
   );

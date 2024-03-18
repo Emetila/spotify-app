@@ -9,5 +9,8 @@ export const loginUser = async (username, password) => {
               // expiresInMins: 60, // optional
             })
           })
+          if (resp.status == 200){
+            throw Error ('Invalid')
+          }
           return resp.json()        
     } 
