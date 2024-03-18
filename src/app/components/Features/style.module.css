@@ -26,9 +26,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .features .list .item img {
     width: 142px;
     height: 142px;
+}
+
+.features .list .item .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.features .list .item .description {
+    font-size: 16px;
+    font-weight: normal;
 }
