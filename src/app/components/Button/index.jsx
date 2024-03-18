@@ -2,7 +2,11 @@ export const CustomButton = (props) => {
     const classNames = {
         primary: 'btn',
         outline: 'btn-outline',
-        secondary: 'btn-secondary'
+        secondary: 'btn-secondary',
+        outline2: 'btn-outline2',
+        facebookbtn: 'facebook-login',
+        apple: 'apple-login',
+        google: 'google-login',
     }
     const className = classNames [props.type] || classNames.primary
     return (

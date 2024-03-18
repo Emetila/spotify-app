@@ -12,7 +12,7 @@ export const HeaderNavigation = (props) => {
             <li className='active'>
                 <a href='#/Sign up'>Sign up</a></li>
             <li className='active'>
-                <a href='#/Log in'>Log in</a></li>
+                <a href='/'>Log in</a></li>
         </ul>
     )
 }

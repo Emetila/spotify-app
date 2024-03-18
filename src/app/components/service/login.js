@@ -1,3 +1,5 @@
+
+
 export const loginUser = async (username, password) => {
     const resp = await
         fetch('https://dummyjson.com/auth/login', {
@@ -14,3 +16,6 @@ export const loginUser = async (username, password) => {
           }
           return resp.json()        
     } 
+    
+    
+    

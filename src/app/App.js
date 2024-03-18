@@ -1,7 +1,7 @@
 import './App.css';
-import { Login } from './components/Login/index.jsx';
-import { Landing } from './pages/Landing'
+import { Login } from './pages/Login/index'
 
+import Landing  from './pages/Landing'
 
 export function App() {
   const isLogin = new URLSearchParams(window.location.search)
@@ -12,8 +12,6 @@ export function App() {
   return (
     <div>
       <Login />
-      
-      
     </div>
   );
 }

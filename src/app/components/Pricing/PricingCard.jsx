@@ -16,9 +16,8 @@ export const PricingCardItem = () => {
                     <l1>Group Session</l1>
                     <l1>Download 10k songs/device on 5 devices</l1>
                 </ul>
-                <CustomButton>
-                View Plans
-                </CustomButton>
+                <CustomButton View plan />
+    
             </div>
             <p>Terms and conditions apply. 1 month free not available for users who have already tried Premium.</p>
         </div>

@@ -1,12 +1,12 @@
 
-import SpotifyBlack from '../../assets/images/spotify-white.png'
-import SpotifyWhite from '../../assets/images/spotify-black.png'
+import SpotifyBlack from '../../assets/images/spotify-black.svg'
+import SpotifyWhite from '../../assets/images/spotify-white.svg'
 import style from "./style.module.css"
 
 export function Logo(props) {
     // //props.useWhite
     // if (props.useWhite) {
-    const myImage = props.usewhite ? SpotifyWhite : SpotifyBlack  
+    const myImage = props.usewhite ? SpotifyBlack : SpotifyWhite 
     return (
             <a href='#/dasboard' className= {style.logo}>
                 <img src={myImage} />   
