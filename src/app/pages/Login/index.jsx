@@ -64,7 +64,7 @@ export const Login = () => {
                 <input className={style.inputbox} type="checkbox" placeholder="Remember me" />
                 <p>Remember me</p>
             </div>
-            <CustomButton onClick={handleLogin} type="secondary2"> LOGIN </CustomButton>
+            <CustomButton onClick={handleLogin} type="secondary"> LOGIN </CustomButton>
         </div>
         <LineDivider className={style.divider} />
         <div className={style.createAccount}>

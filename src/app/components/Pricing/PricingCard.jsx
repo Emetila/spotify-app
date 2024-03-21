@@ -1,12 +1,14 @@
 import { CustomButton } from "../Button"
+import style from './style.module.css'
 
 export const PricingCardItem = () => {
     return (
-        <div>
-            <div>
-                <span>1 month free</span>
-                <span>One-time plans available</span>
-                <h4>Individual</h4>
+        <div className={style.card}>
+            <div className={style.header}>
+                <span className={style.free}>1 month free</span>
+                <br />
+                <span className={style['one-time']}>One-time plans available</span>
+                <h4 className={style.planName}>Individual</h4>
                 <p>₹119/month after offer period</p>
                 <p>1 account </p>
             </div>
@@ -16,10 +18,12 @@ export const PricingCardItem = () => {
                     <l1>Group Session</l1>
                     <l1>Download 10k songs/device on 5 devices</l1>
                 </ul>
-                <CustomButton View plan />
+                <CustomButton onClick={()=>{}}>
+                    View plan
+                </CustomButton>
     
             </div>
-            <p>Terms and conditions apply. 1 month free not available for users who have already tried Premium.</p>
+            <div className={style.footer}>Terms and conditions apply. 1 month free not available for users who have already tried Premium.</div>
         </div>
     )
 }
