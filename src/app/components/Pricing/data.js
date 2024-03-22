@@ -26,4 +26,47 @@ export const paymentMethods = [
     },
 ]
 
-export const pricingList = [1,2,3,4]
+export const pricingList = [{
+    planName: 'Mini',
+    price: 'From ₹7/day',
+    numberAccount: '1 account on mobile only',
+    features: [
+        `Ad-free music listening on mobile`,
+        'Group Session',
+        'Download 30 songs on 1 mobile device',
+    ]
+},{
+    free: '1 month free',
+    planName: 'Indiviual',
+    price: '₹119/month after offer period',
+    numberAccount: '1 ',
+    features: [
+        `Ad-free music listening`,
+        'Group Session',
+        'Download 10k songs/device, on 5 devices per account',
+    ]
+},{
+    free: '1 month free',
+    planName: 'Duo',
+    price: '₹149/month after offer period',
+    numberAccount: '2',
+    features: [
+        `For couples who live together`,
+        'Ad-free music listening',
+        'Group Session',
+        'Download 10k songs/device, on 5 devices per account',
+    ]
+},{
+    free: "1 month free",
+    planName: 'For family who live together',
+    price: '₹179/month after offer period',
+    numberAccount: 'Up to 6',
+    features: [
+        `For family who live together`,
+        'Block explicit music',
+        'Ad-free music listening',
+        'Group Session',
+        'Download 10k songs/device on 5 devices',
+    ]
+}
+]

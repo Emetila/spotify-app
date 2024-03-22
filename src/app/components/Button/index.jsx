@@ -1,3 +1,5 @@
+import { combineClasses } from "../../../utils/format"
+
 export const CustomButton = (props) => {
     const classNames = {
         primary: 'btn',
@@ -9,12 +11,13 @@ export const CustomButton = (props) => {
         google: 'google-login',
     }
     const className = classNames [props.type] || classNames.primary
+    const classes = (combineClasses(className, props.className))
     return (
         props.onClick ?
-        <button onClick= {props.onClick} className={className}>
+        <button onClick= {props.onClick} className={classes}>
             {props.children}
         </button> 
             : 
-        <a href="#"className={className}>{props.title}</a>   
+        <a href="#"className={classes}>{props.children}</a>   
     )
 }

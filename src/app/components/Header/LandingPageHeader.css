@@ -22,6 +22,10 @@
     text-wrap: nowrap;
 }
 
+.menu ul li a:hover {
+    color: #0D72EA;
+}
+
 .menu ul li.active a {
     color: #D9DADC;
 }

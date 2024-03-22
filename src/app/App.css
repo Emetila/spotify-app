@@ -15,6 +15,24 @@
   text-transform: uppercase;
 }
 
+.btn:hover {
+  background-color:transparent;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+
+.btn:active {
+    background-color: black;
+    border: none;
+    transition: 0.4s;
+}
+
+.btn-outline:hover {
+  background-color:black;
+  border: none;
+  transition: 0.2s;
+}
+
 .facebook-login, .apple-login, .google-login {
   background-color: #1877F2;
   color: white;
@@ -39,12 +57,25 @@
   border: 1px solid #6A6A6A;
 }
 
+.btn-invert {
+  background-color: transparent;
+  color: black;
+}
+
+.btn-outline.btn-invert {
+  background-color: inherit;
+  color: black;
+  border: 2px solid black;
+  font-weight: 500;
+}
+
 @media (max-width:500px) {
   .btn, .btn-outline {
       padding: 14px 20px;
       text-wrap: nowrap;
       font-weight: none;
       font-size: 11px;
+      font-weight: 500;
   }
 }
 
