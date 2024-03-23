@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Inter';
  }
 
 .Login .logo {
@@ -39,6 +40,8 @@
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    font-family: 'Inter';
+    font-weight: 600;
 }
 
 .Login .facebookbtn {
