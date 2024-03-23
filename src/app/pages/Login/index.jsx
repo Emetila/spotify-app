@@ -39,7 +39,7 @@ export const Login = () => {
             Continue with Apple
         </button>
         <button className={style.googlebtn}>
-            <GoogleLogo />
+            <GoogleLogo className={style.google}/>
             Continue with Google
         </button>
         <div className={style.divider}>

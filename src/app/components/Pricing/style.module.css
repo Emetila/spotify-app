@@ -1,6 +1,6 @@
 .section {
+    padding: 50px var(--app-block-padding);
     background-color: #EFEFEF;
-    padding: 5%;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -35,6 +35,11 @@
     border: 1px solid #0D72EA;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
 .card h4.planName {
     color: black;
     font-size: 23px;
@@ -46,28 +51,29 @@
 }
 
 .content {
-    padding: 10px;
+    flex: 1;
+    padding: 20px;
     padding-bottom: 0;
     box-shadow: -8px 10px 12px #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content ul {
     margin: 0;
-    padding: 0 22px;
-    height: 160px;
+    padding: 0 28px;
     list-style-image: url(../../assets/icons/check-mark.svg);
 }
 
 .content ul li {
-    font-size: 16px;
-    padding: 5px 10px;
+    padding: 5px 15px;
     position: relative;
 }
 
 .content ul li p {
     margin: 0;
     margin-top: -4px;
-    position: absolute;
 }
 
 .content .button {

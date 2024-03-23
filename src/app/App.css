@@ -17,7 +17,8 @@
 
 .btn:hover {
   background-color:transparent;
-  border: 2px solid white;
+  border: 2px solid black;
+  color: black;
   transition: 0.2s;
 }
 

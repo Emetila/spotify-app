@@ -3,6 +3,7 @@ import { LandingPageHeader } from '../components/Header/LandingPageHeader'
 import { Hero } from '../components/Hero/index.jsx';
 import { Features } from '../components/Features/index.jsx';
 import { PricingSection } from '../components/Pricing/index.jsx'
+import Footer from '../components/Footer/index.jsx';
 
 export default function Landing() {
   return (
@@ -13,6 +14,7 @@ export default function Landing() {
         amount={'$232'}/>
       <Features />
       <PricingSection />
+      <Footer />
     </div>
   );
 }

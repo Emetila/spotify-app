@@ -13,6 +13,11 @@
     margin-bottom: 30px;
 }
 
+.Login .google {
+    width: 20px;
+    padding-right: 10px;
+}
+
 .Login .btns {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,40 @@
+.footer {
+    padding: var(--app-block-padding);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #919496;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .copyright {
+    flex: 0.3;
+    max-width: 0.3fr;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.copyright .social {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social svg {
+    background-color: #222326;
+    color: white;
+    max-width: 54px;
+    max-height: 54px;
+    border-radius: 27px;
+    padding: 10px;
+}
+
+.footer .menu {
+    flex: 1;
+    min-width: 0.7fr;
+    height: 300px;
+}
