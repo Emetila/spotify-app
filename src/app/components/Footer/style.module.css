@@ -7,6 +7,7 @@
     background-color: black;
     display: flex;
     flex-wrap: wrap;
+    height: 450px;
 }
 
 .footer .copyright {
@@ -16,6 +17,7 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-end;
+    font-size: 11px;
 }
 
 .copyright .social {
@@ -27,14 +29,100 @@
 .social svg {
     background-color: #222326;
     color: white;
-    max-width: 54px;
-    max-height: 54px;
+    max-width: 50px;
+    max-height: 50px;
     border-radius: 27px;
     padding: 10px;
+    margin-top: -280px;
 }
 
 .footer .menu {
     flex: 1;
     min-width: 0.7fr;
     height: 300px;
+    padding-top: 50px;
+}
+
+.flex {
+    margin-top: -20px;
+    display: flex;
+    font-size: 12px;
+    text-transform: uppercase;
+    justify-content: center;
+    gap: 100px;
+    letter-spacing: 0.96pt;
+    line-height: 16.8px;
+    padding-left: 100px;
+    flex-wrap: wrap;
+}
+
+.nav, .nav ul {
+    list-style: none;
+    font-size: 12px;
+    padding: 0;
+    width: 195px;
+}
+
+.nav ul a, .nav ul li {
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-transform: capitalize;
+    padding: 0;
+}
+
+.nav ul li {
+    padding: 5px 0;
+}
+
+.nav ul a:hover, .legal-urls a:hover {
+    color: #0D72EA;
+}
+
+.legal-urls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 90px;
+}
+
+.legal-urls a{
+    text-decoration: none;
+    color: #919496;
+    font-size: 12px;
+}
+
+@media (min-width: 1024px) {
+    .footer, .copyright {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .flex{
+        margin-top: 10px;
+        gap: 0;
+        padding-left: 0;
+        flex-wrap: wrap;
+}
+
+.footer {
+    height: 800px;
+}
+
+.social svg {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 27px;
+    margin-top: 300px;
+}
+.legal-urls {
+    padding-top: 70px;
+}
+
+.copyright .copy {
+    display: flex;
+    padding-top: 40px;
+}
 }
